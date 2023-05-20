@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend 1 Contest-2 May</title>
+</head>
+
+<body>
+    <section class="container">
+        <header class="head">      
+            <nav class="navbar head">
+                <div class="logo"><a href="#">Library System</a></div>
+                <ul class="menu"> 
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#" traget="_blank">Register</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#" target="_blank">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <div class="main-wrapper">
+        <div class="main-cont">
+            <section id="books">
+                <h1>BOOKS</h1><br>
+                <table class="ok">
+                    <thead>
+                    <tr>
+                        <th>BOOK ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Avabilablity</th>
+            
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td ><a href="https://books.google.co.in/books?id=oEWUDwAAQBAJ&printsec=frontcover#v=onepage&q&f=false">They Called Us Enemy</a><br>
+                            <table class="KO"><br>
+                                <tr>
+                                    <td>Publication Date:2000</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:250</td>
+                                </tr>
+                                <tr>
+                                    <td>978-1-60309-450-4</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>George Takei, Justin Eisinger, Steven Scott, and Harmony Becker</td>
+                        <td>Memoir,Graphic novel</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="https://books.google.co.in/books?id=E5FfYJmodk0C&printsec=frontcover#v=onepage&q&f=false">A Better India:A Better World</a><br>
+                        <table class="KO"><br>
+                            <tr>
+                                <td>Publication:Penguin Books India,21 April 2009</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:320</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN:9780143068570</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>N. R. Murthy,N. R. Narayana Murthy</td>
+                    <td>History</td>
+                    <td>Not Available</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Sahih_al-Bukhari">Sahih al-Bukhari</a><br>
+                            <table class="KO"><br>
+                                <tr>
+                                    <td>Publication Date:(d. 870 A.D. / 256 AH)</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:7563</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:978-1-56744-519-0</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Muḥammad ibn Ismā‘īl al-Bukhārī</td>
+                        <td>Hadith collection</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="https://en.wikipedia.org/wiki/The_Great_History">The Great History</a><br>
+                            <table class="KO"><br>
+                                <tr>
+                                    <td>Publication Date:ninth-century</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:5262</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:978-1-56744-519-0</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Muḥammad ibn Ismā'īl al-Bukhārī</td>
+                        <td>Hadith collection</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="https://en.wikipedia.org/wiki/The_Book_of_Faith">The Book of Faith</a><br>
+                            <table class="KO"><br>
+                                <tr>
+                                    <td>Publication Date:January 1, 1328.</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:442</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:978-967-5062-28-5</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Ibn Taymiyyah</td>
+                        <td>History</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+                </table>
+            </section>
+        </div> 
+    
+        <section id="registerr" class="main-cont">
+            <h1>Register</h1>
+            <form method="post" action="#">
+            <div>
+                <label for="firstname">First Name:</label><br>
+                <input type="text" name="firstname" id="firstname" minlength="3" maxlength="100" placeholder="write down first name" required>
+            </div><br>
+            <div>
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" name="lastname" id="lastname" minlength="3" maxlength="100" placeholder="write down last name"required>
+            </div><br>
+            <div>
+                <label for="dob">Date Of Birth:</label><br>
+                <input type="date" name="dob" id="dob"required>
+            </div><br>
+            <div>
+                <label for="age">Age:</label><br>
+                <input type="number" name="age" id="age" min="5" max="100" placeholder="write your age" required>
+            </div><br>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="write down E-mail"required>
+            </div><br>
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" id="password" placeholder="write your password" required>
+            </div><br>
+            <div>
+                <label for="conformpassword">Confirm Password:</label><br>
+                <input type="password" name="conformpassword" id="password"  placeholder="conform password" required>
+            </div>
+            <div>
+                <button type="register" name="register" id="mo"  class="mo" value="Register" required>Register</button>
+            </div>
+            </form>
+        </section>
+    </div>
+    <script>
+        function myfun() {
+            var password = document.getElementById("password").value;
+            var passwordMatch = document.getElementById("password").value;
+            if (password == "") {
+                document.getElementById("password-match").innerHTML = "**please fill password currectly";
+                return false;
+            } else if (passwordMatch == "") {
+                document.getElementById("password-match").innerHTML = "";
+                document.getElementById("password-match2").innerHTML = "**please fill password currectly";
+                return false;
+            }
+            else if (password != passwordMatch) {
+                document.getElementById("psw-match2").innerHTML = "**Password does not match";
+                return false;
+            } else if (password == passwordMatch) {
+                document.getElementById("psw-match2").innerHTML = "Password Matched";
+                document.getElementById("psw-match").innerHTML = "";
+                return false;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
